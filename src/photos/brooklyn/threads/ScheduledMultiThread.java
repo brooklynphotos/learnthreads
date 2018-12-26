@@ -6,6 +6,9 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * https://www.baeldung.com/java-start-thread
+ */
 public class ScheduledMultiThread {
     final private ScheduledExecutorService svc = Executors.newScheduledThreadPool(2);
     final private AtomicInteger sharedIndex = new AtomicInteger(0);
