@@ -4,6 +4,9 @@ import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * each thread will do its own thing but waits for the cyclic barrier to be done before leaving the await() call
+ */
 public class CyclicBarrierMultiThread {
     public int countDown(final int latchCount) {
         final CyclicBarrier b = new CyclicBarrier(latchCount);

@@ -3,6 +3,9 @@ package photos.brooklyn.threads;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * all the threads are done regardless of other threads, but the latch is awaited outside of each thread call
+ */
 public class CountDownMultiThread {
     public int countDown(final int threadCount, final int latchCount) throws InterruptedException {
         final CountDownLatch l = new CountDownLatch(latchCount);
