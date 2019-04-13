@@ -1,4 +1,4 @@
-package photos.brooklyn.threads;
+package photos.brooklyn.threads.executors;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
